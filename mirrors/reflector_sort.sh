@@ -14,4 +14,4 @@ case $country_choice in
     ;;
 esac
 
-reflector --verbose --age 24 $protocol $countries --sort rate --save $reflector_tmp
+reflector --verbose --age 6 $protocol $countries --sort rate --save $reflector_tmp
