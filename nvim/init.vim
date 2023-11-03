@@ -1,6 +1,9 @@
 " nvim sets
+let mapleader = "<C>"
 set shiftwidth=4
 set relativenumber
+vnoremap <leader>c "+y
+vnoremap <leader>v "+p
 
 " Window Navigation with Alt
 nnoremap <M-h> <C-w>h
@@ -15,6 +18,7 @@ call plug#end()
 
 " NERDTree setup
 nnoremap <C-n> :call CustomNERDTreeToggle()<CR>
+nnoremap <C-r> :call  <CR> 
 
 function! CustomNERDTreeToggle()
     if bufname('%')=~'^NERD_tree'
